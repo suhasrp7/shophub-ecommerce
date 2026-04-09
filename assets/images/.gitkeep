@@ -1,0 +1,8 @@
+<?php
+require_once 'includes/config.php';
+require_once 'includes/product_functions.php';
+
+$conn = connectDB();
+$categories = getCategories($conn);
+?>
+<img src="assets/images/default.jpg" class="img-fluid" alt="ShopHub" onerror="this.style.display='none'">
