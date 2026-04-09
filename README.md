@@ -1,104 +1,77 @@
-# E-commerce Website - Setup Instructions
+# 🛒 ShopHub E-Commerce Website
 
-## Prerequisites
-- XAMPP or WAMP installed
-- Web browser (Chrome, Firefox, Edge)
-- MySQL database
+A full-stack E-Commerce web application built using PHP and MySQL. It allows users to browse products, add items to cart, and place orders, while admins can manage products, users, and orders through a dedicated dashboard.
 
-## Installation Steps
+---
 
-### Step 1: Copy Project Files
-Copy the `ecommerce` folder to your web server root:
-- XAMPP: `C:\xampp\htdocs\`
-- WAMP: `C:\wamp64\www\`
+## 🚀 Features
 
-### Step 2: Start Services
-1. Open XAMPP/WAMP Control Panel
-2. Start Apache
-3. Start MySQL
+### 👤 User Features
+- User Registration & Login
+- Browse Products
+- Search & Filter Products
+- Add to Cart / Remove from Cart
+- Checkout System
+- Order History
+- User Profile Management
 
-### Step 3: Create Database
-1. Open phpMyAdmin: http://localhost/phpmyadmin
-2. Click "Import" tab
-3. Browse and select `database.sql` file
-4. Click "Go" to import
+### 🔐 Admin Features
+- Admin Dashboard with statistics
+- Product Management (Add / Edit / Delete - CRUD)
+- Order Management with status updates
+- User Management
 
-### Step 4: Configure Database Connection
-Edit `includes/config.php` if needed:
-```php
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'ecommerce_db');
-```
+---
 
-### Step 5: Access the Website
-Frontend: http://localhost/php-internship-project/ecommerce/
-Admin Panel: http://localhost/php-internship-project/ecommerce/admin/
+## 🛠️ Tech Stack
 
-## Demo Credentials
+- Frontend: HTML, CSS, JavaScript  
+- Backend: PHP  
+- Database: MySQL  
+- Server: XAMPP (Apache)
 
-### Admin Login
-- Email: admin@ecommerce.com
-- Password: admin123
+---
 
-### Customer
-- Register a new account at the register page
+## ⚙️ Installation & Setup
 
-## Features Included
+1. Install XAMPP  
+2. Copy project folder to C:\xampp\htdocs\  
+3. Start Apache and MySQL from XAMPP  
+4. Open http://localhost/phpmyadmin  
+5. Create a database named ecommerce_db  
+6. Import the database.sql file  
+7. Open includes/config.php and ensure database credentials are correct  
+8. Run the project using: http://localhost/php-internship-project/ecommerce/  
 
-### Frontend
-- Home page with featured products
-- Product listing with filters and search
-- Product details page
-- Shopping cart
-- Checkout with multiple payment options
-- User profile management
-- Order history
+---
 
-### Admin Panel
-- Dashboard with statistics
-- Product management (CRUD)
-- Order management with status updates
-- User management
+## 🔑 Admin Login
 
-### Security
-- Password hashing (bcrypt)
-- Prepared statements (SQL injection prevention)
-- Session-based authentication
-- Input sanitization
+- Email: admin@ecommerce.com  
+- Password: admin123  
 
-## Project Structure
-```
+---
+
+## 📂 Project Structure
+
 ecommerce/
-├── admin/           # Admin panel pages
-├── api/             # AJAX API endpoints
+├── admin/
 ├── assets/
-│   ├── css/         # Stylesheets
-│   ├── js/          # JavaScript files
-│   └── images/      # Product images
-├── includes/        # Core PHP files
-│   ├── config.php
-│   ├── product_functions.php
-│   ├── user_functions.php
-│   ├── cart_functions.php
-│   └── order_functions.php
-├── uploads/         # Uploaded files
-├── database.sql     # Database schema
-└── README.md        # This file
-```
+├── includes/
+├── uploads/
+├── database.sql
+└── index.php
 
-## Troubleshooting
+---
 
-### Database Connection Error
-- Ensure MySQL is running
-- Check credentials in config.php
-- Verify database exists
+## 🎯 Future Improvements
 
-### 404 Errors
-- Ensure Apache mod_rewrite is enabled (if using clean URLs)
-- Check file paths are correct
+- Payment Integration  
+- Wishlist Feature  
+- Product Reviews  
 
-### Image Not Showing
-- Ensure uploads/ folder has write permissions
-- Check product image path in database
+---
+
+## 👨‍💻 Author
+
+Suhas
