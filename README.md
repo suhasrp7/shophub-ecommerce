@@ -1,6 +1,6 @@
 # 🛒 ShopHub E-Commerce Website
 
-A modern E-Commerce web application built using React, Vite, and JavaScript. This project allows users to browse products, add items to cart, and simulate an online shopping experience with a responsive and user-friendly interface.
+A modern E-Commerce web application with simulated features built using React, Vite, and JavaScript. This project allows users to browse products, add items to cart, and simulate an online shopping experience with a responsive and user-friendly interface.
 
 ---
 
