@@ -83,3 +83,4 @@ Suhas
 ## 📌 Note
 
 This project is built for learning and demonstration purposes, focusing on frontend development, UI design, and application structure.
+This is a frontend-based demo project. Payment and order functionalities are simulated.
